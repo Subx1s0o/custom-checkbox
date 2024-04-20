@@ -1,0 +1,45 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #640a52f5;
+}
+
+.checkbox-empty {
+  border: 2px solid yellow;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  fill: transparent;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 4px;
+  transition: all ease-in 250ms;
+}
+
+input:checked + label > .checkbox-empty {
+  background-color: blue;
+  fill: white;
+  border: none;
+}
